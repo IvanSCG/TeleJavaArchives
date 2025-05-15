@@ -29,6 +29,6 @@ app.post('/upload', upload.single('file'), (req, res) => {
 });
 app.use('/downloads', express.static(UPLOAD_DIR));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 console.log("Valor de process.env.PORT:", process.env.PORT);
 app.listen(PORT, () => console.log(`HTTP de ficheros escuchando en ${PORT}`));
