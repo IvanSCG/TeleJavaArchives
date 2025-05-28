@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 
 /* ------------------------------------------------------------------ *
- *   1.  SUBIDA DE FICHEROS (avatars por usuario y ficheros genéricos) *
+ *   1.  SUBIDA DE FICHEROS fix (avatars por usuario y ficheros genéricos) *
  * ------------------------------------------------------------------ */
 const UPLOAD_DIR = path.join(__dirname, 'uploads');
 if (!fs.existsSync(UPLOAD_DIR)) fs.mkdirSync(UPLOAD_DIR, { recursive: true });
